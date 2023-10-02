@@ -1,0 +1,126 @@
+<!-- Service Page Documents -->
+<!-- Ryan Lam -->
+<!-- 301265448 -->
+<!-- 10-01-2023 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh; 
+        }
+
+        footer {
+            background-color: #343a40; 
+            color: white; 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px 0; 
+        }
+    </style>
+  </head>
+  <body style="padding-bottom: 70px;"></body>
+<body>
+
+<!-- ------------NAVBAR---------------------- -->
+<%- include('partials/header') %>
+
+    <div id="courses-content">
+      <div class="overlay">
+        <div class="container  text-left pt-2">
+          <div class="row">
+              <div class="col">
+                <h1>Services</h1>
+               </div>
+          </div>
+        </div>
+      </div>
+  </div>
+<!-- -----------Service Page Content------------ -->
+<div class="container mt-3">
+    <div class="accordion" id="serviceAccordion">
+        <!-- Software Programming -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="softwareProgrammingHeader">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softwareProgrammingCollapse" aria-expanded="true" aria-controls="softwareProgrammingCollapse">
+                    Software Programming
+                </button>
+            </h2>
+            <div id="softwareProgrammingCollapse" class="accordion-collapse collapse" aria-labelledby="softwareProgrammingHeader" data-bs-parent="#serviceAccordion">
+                <div class="accordion-body">
+                    <img src="/images/project_logo.png" alt="Description of Image"width="100" height="100">
+                    <p>As a skilled software programmer, I offer comprehensive programming services utilizing various languages such as C#, Java, and JavaScript. 
+                        With over one year of hands-on experience in the field, I am well-versed in developing solutions tailored to diverse client needs. My proficiency in these languages allows me to create efficient and innovative software solutions that meet and exceed expectations.</p>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile App Development -->       
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="mobileAppDevelopmentHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileAppDevelopmentCollapse" aria-expanded="false" aria-controls="mobileAppDevelopmentCollapse">
+                    Mobile App Development
+                </button>
+            </h2>
+            <div id="mobileAppDevelopmentCollapse" class="accordion-collapse collapse" aria-labelledby="mobileAppDevelopmentHeader" data-bs-parent="#serviceAccordion">
+                <div class="accordion-body">
+                    <img src="/images/android_image.png" alt="Description of Image"width="100" height="100">
+                    <p>In the realm of mobile development for Android, I specialize in crafting innovative solutions. With a strong command of Android Studio, I provide tailored services that cater to the unique demands of the Android platform. 
+                        My expertise in mobile app development ensures that I can deliver top-notch applications that are not only functional but also user-friendly, providing a seamless experience to end-users.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Data Analysis -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dataAnalysisHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dataAnalysisCollapse" aria-expanded="false" aria-controls="dataAnalysisCollapse">
+                    Data Analysis
+                </button>
+            </h2>
+            <div id="dataAnalysisCollapse" class="accordion-collapse collapse" aria-labelledby="dataAnalysisHeader" data-bs-parent="#serviceAccordion">
+                <div class="accordion-body">
+                    <img src="/images/oracle_image.png" alt="Description of Image"width="100" height="100">
+                    <p>
+                        In the domain of data analysis, I excel in harnessing the power of data to derive meaningful insights. 
+                        Proficient in SQL Oracle and MongoDB, I possess the analytical skills to dissect complex datasets and extract valuable information. 
+                        My ability to work with diverse data sources and apply advanced analytical techniques empowers me to deliver data-driven solutions that drive informed decision-making.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Web Development -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="webDevelopmentHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#webDevelopmentCollapse" aria-expanded="false" aria-controls="webDevelopmentCollapse">
+                    Web Development
+                </button>
+            </h2>
+            <div id="webDevelopmentCollapse" class="accordion-collapse collapse" aria-labelledby="webDevelopmentHeader" data-bs-parent="#serviceAccordion">
+                <div class="accordion-body">
+                    <img src="/images/nodejs_image.png" alt="Description of Image"width="100" height="100">
+                    <p>
+                        In the realm of web development, I bring expertise in crafting dynamic and responsive digital experiences. Proficient in Node.js and JavaScript, I have a strong foundation in both front-end and back-end web technologies. 
+                        With these skills, I can create interactive web applications and ensure seamless user experiences.
+                        My dedication to staying updated with the latest web development trends and best practices ensures that I can deliver high-quality web solutions tailored to meet your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------FOOTER-------------------- -->
+<%- include('partials/footer') %>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script>
+
+</script>
+</body>
+</html>
